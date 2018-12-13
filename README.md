@@ -13,6 +13,6 @@ Overall performance increase, as I've measured it, is about 7x, with my time imp
 
 Other things I tried that didn't work:
 
-* Many other amounts of loop unfurling, ranging from 2 all the way to 120 iterations. 5 was the sweet spot back when I was using atoi; 12 is the sweet spot for my custom function
+* Many other amounts of loop unfurling, ranging from 2 all the way to 120 iterations. 5 was the sweet spot back when I was using atoi; 12 is the sweet spot after swapping it out for my custom function
 * Different loop constructions to try to cut down on overhead; overhead remained constant regardless, due to good compiler optimization
 * Using i++ or ++i in places i is mentioned in the loop body, rather than as its own thing; similarly failed to remove overhead due to good compiler optimization
