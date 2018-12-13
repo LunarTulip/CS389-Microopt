@@ -2,8 +2,6 @@
 
 #include "converter.h"
 
-#include <stdlib.h>
-
 inline uint32_t shortCstringToUint(char* cstring) {
     uint32_t result = ((uint32_t)cstring[0]) - 48;
     for (uint_fast8_t i = 1; cstring[i] != 0; i++) {
