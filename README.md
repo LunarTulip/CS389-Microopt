@@ -16,3 +16,4 @@ Other things I tried that didn't work:
 * Many other amounts of loop unfurling, ranging from 2 all the way to 120 iterations. 5 was the sweet spot back when I was using atoi; 12 is the sweet spot after swapping it out for my custom function
 * Different loop constructions to try to cut down on overhead; overhead remained constant regardless, due to good compiler optimization
 * Using i++ or ++i within lines wherein i is already mentioned anyway, rather than as its own line; similarly failed to remove overhead due to good compiler optimization
+* Rather than calling a function, just directly manipulate things within the main loop; worked less well than inline function for reasons I don't understand but assume are once again compiler-optimization-related
